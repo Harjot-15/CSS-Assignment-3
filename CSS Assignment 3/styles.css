@@ -1,0 +1,113 @@
+
+
+/* General styles for the body of the page */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;  /* Sets the typeface for the body text */
+    margin: 0;  /* Removes the default margin around the body */
+    padding: 0;  
+    display: flex;  /* Applies a flex container to the body for alignment */
+    flex-direction: column;  
+    align-items: center;  
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_39/1371648/snickers-today-main-180928.jpg");  /* Sets the background image of the body */
+    background-size: cover;  
+    background-attachment: fixed; 
+}
+
+/* Styling for the header */
+header {
+    width: 100%;  /* Sets the width of the header */
+    padding: 20px;  /* Adds padding inside the header */
+    background: rgba(0,0,0,0.6);  /* Sets the background color */
+    color: white; 
+    display: flex;  
+    justify-content: center;  /* Centers child elements horizontally */
+    align-items: center;  /* Centers child elements vertically */
+    font-size: 2em;  /* Increases the font size in the header */
+    font-family: 'Playfair Display', serif;  
+    text-shadow: 2px 2px 4px #000000;  /* Adds a shadow to the text in the header */
+}
+
+/* Styles for the main content area */
+main {
+    width: 80%;  /* Sets the width of the main area */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;  /* Centers child elements horizontally */
+    margin: 20px 0;  /* Adds margin above and below the main area */
+    background:white;  /* Sets the background color of the main area */
+    padding: 20px;  
+    border-radius: 15px;  /* Rounds the corners of the main area */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  /* Adds a shadow around the main area */
+}
+
+/* Styles for individual sections within the main area */
+.section {
+    margin-bottom: 20px;  /* Adds margin below each section */
+}
+
+/* Styling for the footer */
+footer {
+    width: 100%;  
+    padding: 20px;  
+    background: rgba(0,0,0,0.6);  /* Sets the background color of the footer */
+    color: white;  /* Sets the text color in the footer to white */
+    display: flex;  
+    justify-content: center;  /* Centers child elements horizontally */
+    font-size: 1em;  
+    margin-top: 20px; 
+    font-family: 'Playfair Display', serif;  
+    text-shadow: 2px 2px 4px #000000; 
+}
+
+/* Styles for the content within the footer */
+
+.footer-content {
+    width: 80%;  
+    display: grid;  /* Applies a grid container to the footer content */
+    grid-template-columns: 1fr 1fr;  /* Divides the footer content */
+    align-items: center;  /* Centers child elements vertically */
+    gap: 20px;  /* Adds a gap between grid items */
+}
+
+/* Styling for the contact form in the footer */
+.contact-form {
+    display: flex;  
+    flex-direction: column;  /* Sets the flex direction to column for vertical stacking */
+}
+
+/* Styles for the elements within the contact form */
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;  
+    border-radius: 5px;  
+    border: 1px solid #000;  /* Adds a border around each input and textarea */
+}
+
+/* Styling for the submit button in the contact form */
+
+.contact-form input[type="submit"] {
+    background: #633603;  /* Sets the background color of the submit button */
+    color: #fff;  /* Sets the text color of the submit button to white */
+    cursor: pointer; 
+}
+
+/* Adds a hover effect to the submit button */
+.contact-form input[type="submit"]:hover {
+    background: #432904;  /* Changes the background color of the submit button on hover */
+    transition: background 0.3s ease-in-out;  /* Adds a transition effect to the background color change */
+}
+
+/* Styling for the logo in the footer */
+.logo {
+    width: 250px;  /* Sets the width of the logo */
+    height: auto; 
+    margin-bottom: -50px;  
+    margin-left: -20px; 
+}
